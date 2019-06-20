@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import java.lang.Integer?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Garage.Administrator.AdministratorController">
+   <children>
+      <ComboBox fx:id="vehicleTypeBox" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="210.0" promptText="Select vehicle type" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" >
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Cars"/>
+                  <String fx:value="Vans"/>
+                  <String fx:value="Motors"/>
+                  <String fx:value="All"/>
+              </FXCollections>
+          </items>
+      </ComboBox>
+       <!--<ComboBox fx:id="floorComboBox" layoutX="247.0" layoutY="20.0" prefHeight="25.0" prefWidth="70.0" promptText="Floor" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="20.0" ><items>-->
+           <!--<FXCollections fx:factory="observableArrayList">-->
+               <!--<Integer fx:value="0" />-->
+           <!--</FXCollections>-->
+       <!--</items>-->
+       <!--</ComboBox>-->
+       <TableView fx:id="vehicleTable" layoutX="14.0" layoutY="58.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+        <columns>
+          <TableColumn fx:id="typeColumn" prefWidth="92.0" text="Type" />
+          <TableColumn fx:id="brandColumn" minWidth="6.0" prefWidth="120.0" text="Brand" />
+            <TableColumn fx:id="photoColumn" prefWidth="115.0" text="Photo" />
+            <TableColumn fx:id="plateColumn" prefWidth="113.0" text="Registration Plate" />
+            <TableColumn fx:id="dorsColumn" prefWidth="38.0" text="No. of dors" />
+            <TableColumn fx:id="weightColumn" prefWidth="79.0" text="Max Wegth" />
+        </columns>
+      </TableView>
+      <Button fx:id="addVehicleBtn" layoutX="477.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Add Vehicle" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="startClientBtn" layoutX="20.0" layoutY="355.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Start Client" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
+   </children>
+</AnchorPane>

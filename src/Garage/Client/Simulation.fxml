@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="364.0" prefWidth="210.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="simArea" layoutX="17.0" layoutY="58.0" prefHeight="226.0" prefWidth="175.0" text="        &#10;        &#10;*  **  *&#10;*  **  *&#10;*  **  *&#10;*  **  *&#10;*  **  *&#10;*  **  *&#10;*      *&#10;*      *">
+         <font>
+            <Font name="Monospaced Bold" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="restartSimBtn" layoutX="111.0" layoutY="295.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Restart" />
+      <ComboBox fx:id="floorComboBox" layoutX="17.0" layoutY="22.0" prefHeight="25.0" prefWidth="175.0" promptText="1" />
+      <Button fx:id="addVehicleToSim" layoutX="17.0" layoutY="295.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Add" />
+      <Button fx:id="startSimBtn" layoutX="17.0" layoutY="325.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="175.0" text="Start Simulation" />
+   </children>
+</AnchorPane>
